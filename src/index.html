@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://cdn.jsdelivr.net; media-src blob:;"
+    />
+
+    <meta charset="UTF-8" />
+    <title>Screen Recorder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">🎥 Electron Screen Recorder</h1>
+
+        <!-- Video Preview -->
+        <div class="box">
+          <video style="width: 100%" autoplay></video>
+        </div>
+
+        <!-- Controls -->
+        <div class="buttons">
+          <button id="videoSelectBtn" class="button is-link">
+            Choose Screen
+          </button>
+
+          <button id="startBtn" class="button is-primary">
+            Start Recording
+          </button>
+
+          <button id="stopBtn" class="button is-danger">Stop Recording</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
